@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- --------- FAVICON ---------- -->
+
+    <title>Portfolio | Ludiflex</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- --------------- HEADER --------------- -->
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name">SB Portfolio</p>
+                <span>.</span>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#home" class="nav-link active-link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#about" class="nav-link">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#contact" class="nav-link">Contact</a>
+                        <div class="circle"></div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+            </div>
+
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+            <button id="themeToggle" class="icon-btn" onclick="toggleTheme()" title="Toggle Light/Dark Mode">
+                <i id="themeIcon" class="uil uil-sun"></i>
+            </button>
+            <!-- HTML Button -->
+        </nav>
+        <!-- -------------- MAIN ---------------- -->
+        <main class="wrapper">
+            <!-- -------------- FEATURED BOX ---------------- -->
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+
+                    <!-- -------------- <div class="featured-text-card">
+                        <span>Bharath S</span>
+                        <span class="nametext"></span>
+                    </div> ---------------- -->
+                    <div class="featured-name">
+                        <p><span class="nametext"></span></p>
+                    </div>
+                    <div class="featured-name">
+                        <p>I'm <span class="typedText"></span></p>
+                    </div>
+                    <div class="featured-text-info">
+                        <p>Experienced FullStack Developer with a passion for creating visually stunning
+                            and user-friendly websites and applications (for IOS and Android OS) .
+                        </p>
+                    </div>
+
+                    <div class="featured-text-btn">
+                        <a href="#contact" class="nav-link"><button class="btn blue-btn">Contact Me</button></a>
+                        <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+                    </div>
+
+                    <div class="social_icons">
+                        <a href="https://www.instagram.com/__bharath__23?igsh=dXV2MzVqZ3VsbzZh/">
+                            <div class="icon"><i class="uil uil-instagram"></i></div>
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/bharath-s-5973782a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app/">
+
+                            <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                        </a>
+                        <a href="https://github.com/Bharath2006/">
+
+                            <div class="icon"><i class="uil uil-github-alt"></i></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <div class="image">
+                        <img src="assets/images/bharath.png" alt="avatar">
+                    </div>
+                </div>
+            </section>
+            <!-- -------------- ABOUT BOX ---------------- -->
+            <section class="section" id="about">
+                <div class="top-header">
+                    <h1>About Me</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="about-info">
+                            <h3>My introduction</h3>
+                            <p>"Enthusiastic Flutter Full Stack Developer adept at crafting seamless user experiences
+                                across mobile and web platforms. With a solid foundation in both frontend and backend
+                                technologies, I specialize in leveraging Flutter's versatility to build dynamic,
+                                high-performance applications. My passion lies in delivering elegant solutions that
+                                merge design aesthetics with robust functionality, ensuring optimal performance and user
+                                satisfaction at every turn."
+                            </p>
+                            <div class="about-btn">
+                                <button class="btn">Download CV <i class="uil uil-import"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="about-info">
+
+
+                            <h3>Frontend</h3>
+                            <div class="skills-list">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Flutter</span>
+                                <span>JavaScript</span>
+                                <span>React-Native</span>
+                                <span>React</span>
+                            </div>
+
+
+
+                            <h3>Backend</h3>
+                            <div class="skills-list">
+                                <span>PHP</span>
+                                <span>JAVA</span>
+                                <span>Python</span>
+                                <span>C++</span>
+                                <span>C</span>
+                                <span>Dart</span>
+                            </div>
+
+                            <h3>Database</h3>
+                            <div class="skills-list">
+                                <span>MySQL</span>
+                                <span>Firebase</span>
+                                <span>MongoDB</span>
+                                <span>AWS</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- --------------  <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Frontend</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Flutter</span>
+                                <span>JavaScript</span>
+                                <span>React-Native</span>
+                                <span>React</span>
+                            </div>
+                        </div> ---------------- -->
+
+                </div>
+            </section>
+
+            <!-- -------------- PROJECT BOX ---------------- -->
+
+            <section class="section" id="projects">
+                <div class="top-header">
+                    <h1>Projects</h1>
+                </div>
+                <div class="project-container">
+                    <div class="project-box">
+                        <a href="https://github.com/Bharath2006/Test_face_and_hand_detection" target="_blank"
+                            rel="noopener">
+                            <h3>Hand and Face landmarker</h3>
+                            <h6>on tap to open Git Hub Repository</h6>
+                            <div class="project-image">
+                                <img src="assets/images/HanFac.png" alt="Clients Project">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-box">
+                        <a href="https://github.com/Bharath2006/FingBright" target="_blank" rel="noopener">
+                            <h3>2 Finger Brighter</h3>
+                            <h6>on tap to open Git Hub Repository</h6>
+
+                            <div class="project-image">
+                                <img src="assets/images/fingbri.png" alt="Clients Project">
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="project-box">
+                        <a href="https://github.com/Bharath2006/FaSaAnalist" target="_blank" rel="noopener">
+                            <h3>Face Emotion Detector</h3>
+                            <h6>on tap to open Git Hub Repository</h6>
+
+                            <div class="project-image">
+                                <img src="assets/images/FaEmoDetec.png" alt="Clients Project">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="project-box">
+                        <a href="https://github.com/Bharath2006/EyFaDetec" target="_blank" rel="noopener">
+                            <h3>Eye and Hand LandMarker</h3>
+                            <h6>on tap to open Git Hub Repository</h6>
+                            <div class="project-image">
+                                <img src="assets/images/EyeFacLandmarker.png" alt="Clients Project">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-box">
+                        <a href="https://github.com/Bharath2006/Drowse" target="_blank" rel="noopener">
+                            <h3>Drowiness</h3>
+                            <h6>on tap to open Git Hub Repository</h6>
+
+                            <div class="project-image">
+                                <img src="assets/images/DroDect.png" alt="Clients Project">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-box">
+                        <a href="https://github.com/Bharath2006/Blfa" target="_blank" rel="noopener">
+                            <h3>Blure Face</h3>
+                            <h6>on tap to open Git Hub Repository</h6>
+                            <div class="project-image">
+                                <img src="assets/images/BlFa.png" alt="Clients Project">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-box">
+                        <a href="https://github.com/Bharath2006/HanCoun" target="_blank" rel="noopener">
+                            <h3>Head Counter</h3>
+                            <h6>on tap to open Git Hub Repository</h6>
+                            <div class="project-image">
+                                <img src="assets/images/hedcon.png" alt="Clients Project">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-box">
+                        <a href="https://github.com/Bharath2006/portfolio" target="_blank" rel="noopener">
+                            <h3>Portfolio</h3>
+                            <h6>on tap to open Git Hub Repository</h6>
+                            <div class="project-image">
+                                <img src="assets/images/portfolio.png" alt="Clients Project">
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+            <!-- -------------- CONTACT BOX ---------------- -->
+            <!-- --------------  <section class="section" id="contact">
+        <div class="top-header">
+            <h1>Get in touch</h1>
+            <span>Do you have a project in your mind, contact me here</span>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="contact-info">
+                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i> Email: skbharath2006@gmail.com</p>
+                    <p><i class="uil uil-phone"></i> Tel: +91 9080121722</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-control">
+                    <div class="form-inputs">
+                        <input type="text" class="input-field" placeholder="Name">
+                        <input type="text" class="input-field" placeholder="Email">
+                    </div>
+                    <div class="text-area">
+                        <textarea placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-button">
+                        <button class="btn">Send <i class="uil uil-message"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> ---------------- -->
+            <section class="section" id="contact">
+                <div class="top-header">
+                    <h1>Get in touch</h1>
+                    <h2></h2> Do you have a project in your mind o, contact me here</h2>
+                </div>
+
+                <div class="r">
+                    <div class="c">
+                        <div class="contact-info">
+                            <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                            <p><i class="uil uil-envelope"></i> Email: skbharath2006@gmail.com</p>
+                            <p><i class="uil uil-phone"></i>Ph.No: +91 9080121722</P>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+        </main>
+
+
+        <!-- --------------- FOOTER --------------- -->
+        <footer>
+            <div class="top-footer">
+                <h1>Bharath S</h1>
+            </div>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer_menu_list">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                <a href="https://www.instagram.com/__bharath__23?igsh=dXV2MzVqZ3VsbzZh/">
+                    <div class="icon"><i class="uil uil-instagram"></i></div>
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/bharath-s-5973782a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app/">
+
+                    <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                </a>
+                <a href="https://github.com/Bharath2006/">
+
+                    <div class="icon"><i class="uil uil-github-alt"></i></div>
+                </a>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Bharath</a> - All rights reserved
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
