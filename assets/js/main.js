@@ -44,7 +44,7 @@ function themeToggle() {
 }
 /* resume download */
 function openPdf() {
-            window.open('path/to/your/file.pdf', '_blank');
+            window.open('assets/Resume/BharathResume.pdf', '_blank');
         }
 
 
