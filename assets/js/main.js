@@ -44,8 +44,8 @@ function themeToggle() {
 }
 /* resume download */
 function openPdf() {
-            window.open('assets/Resume/BharathResume.pdf', '_blank');
-        }
+  window.open('assets/Resume/BharathResume.pdf', '_blank');
+}
 
 
 /* ----- TYPING EFFECT ----- */
@@ -163,23 +163,36 @@ document.addEventListener('DOMContentLoaded', function () {
 
   }
 });
-// JavaScript
 function toggleTheme() {
   const body = document.body;
   const themeIcon = document.getElementById('themeIcon');
-  const footer = document.querySelector('top-footer');
+  const header = document.getElementById('header');
+  const buttons = document.querySelectorAll('.btn');
+  const container = document.querySelector('.container');
+  const footer = document.querySelector('.top-footer');
 
   if (body.classList.contains('dark-theme')) {
     body.classList.remove('dark-theme');
+    header.style.backgroundColor = 'white';
+    buttons.forEach(button => {
+      button.style.backgroundColor = '#efefef';
+      button.style.color = 'black';
+    });
+    container.style.backgroundColor = 'var(--body-color)';
     footer.classList.remove('dark-theme');
     themeIcon.classList.remove('uil-moon');
     themeIcon.classList.add('uil-sun');
   } else {
     body.classList.add('dark-theme');
+    header.style.backgroundColor = '#333';
+    buttons.forEach(button => {
+      button.style.backgroundColor = '#555'; // Update button color for dark theme
+      button.style.color = 'white'; // Update text color for dark theme
+    });
+    container.style.backgroundColor = '#333'; // Update container color for dark theme
+    footer.classList.add('dark-theme');
     themeIcon.classList.remove('uil-sun');
     themeIcon.classList.add('uil-moon');
-    footer.classList.add('dark-theme');
-
   }
 }
 
