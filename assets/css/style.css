@@ -797,6 +797,16 @@ footer {
 
 /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
 @media only screen and (max-width: 900px) {
+    #header {
+        position: fixed;
+        background-color: white;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .container {
+        padding-top: 90px; /* Adjust this value based on the height of your header */
+    }
     .nav-button {
         display: none;
     }
