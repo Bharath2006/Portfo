@@ -12,9 +12,8 @@
 }
 
 .container {
-    padding-top: 70px; /* Adjust this value based on the height of your header */
+    padding-top: 90px; /* Adjust this value based on the height of your header */
 }
-
 
 /*links*/
 a:link {
@@ -797,15 +796,6 @@ footer {
 
 /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
 @media only screen and (max-width: 900px) {
-    #header {
-        position: fixed;
-        height: 80px; /* Adjust the height of the header for smaller screens */
-    }
-
-    .container {
-        padding-top: 80px; /* Adjust this value based on the height of your header */
-       
-    }
     .nav-button {
         display: none;
     }
@@ -902,13 +892,6 @@ footer {
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
 
 @media only screen and (max-width: 540px) {
-      #header {
-        height: 70px; /* Adjust the height of the header for even smaller screens */
-    }
-
-    .container {
-        padding-top: 70px; /* Adjust this value based on the height of your even smaller header */
-    }
     .featured-name {
         font-size: 40px;
     }
