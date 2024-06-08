@@ -799,13 +799,12 @@ footer {
 @media only screen and (max-width: 900px) {
     #header {
         position: fixed;
-        background-color: white;
-        z-index: 1000;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        height: 80px; /* Adjust the height of the header for smaller screens */
     }
 
     .container {
-        padding-top: 90px; /* Adjust this value based on the height of your header */
+        padding-top: 80px; /* Adjust this value based on the height of your header */
+       
     }
     .nav-button {
         display: none;
@@ -903,6 +902,13 @@ footer {
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
 
 @media only screen and (max-width: 540px) {
+      #header {
+        height: 70px; /* Adjust the height of the header for even smaller screens */
+    }
+
+    .container {
+        padding-top: 70px; /* Adjust this value based on the height of your even smaller header */
+    }
     .featured-name {
         font-size: 40px;
     }
