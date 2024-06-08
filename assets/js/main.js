@@ -8,6 +8,19 @@ function myMenuFunction() {
     menuBtn.className = "nav-menu";
   }
 }
+// Select the mobile menu
+const mobileMenu = document.getElementById('mobile-menu');
+
+// Select all menu items
+const menuItems = document.querySelectorAll('.nav-menu .nav_list');
+
+// Add event listener to each menu item
+menuItems.forEach(menuItem => {
+    menuItem.addEventListener('click', () => {
+        // Hide the mobile menu when a menu item is clicked
+        mobileMenu.classList.remove('show');
+    });
+});
 
 /* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
 window.onscroll = function () { headerShadow(), themeToggle() };
