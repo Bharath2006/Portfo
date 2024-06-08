@@ -68,8 +68,12 @@ a:active {
 
 /* Dark Theme */
 .dark-theme {
-    --body-color: #333;
-    --text-color: #fff;
+    /* Add dark theme styles here */
+    color: #fff;
+    /* For example, change text color to white */
+    background-color: #333;
+    /* Change background color */
+    /* Add any other necessary styles for dark theme */
 }
 
 
@@ -206,7 +210,7 @@ nav {
 .nav-name {
     font-size: 30px;
     font-weight: 600;
-    color: var(--text-color-third);
+    color: rgb(0, 115, 255);
 }
 
 .nav-logo span {
@@ -235,6 +239,8 @@ nav {
     margin-inline: 20px;
 }
 
+.top-header {}
+
 .nav-menu-btn {
     display: none;
 }
@@ -242,6 +248,7 @@ nav {
 .nav-menu-btn i {
     font-size: 28px;
     cursor: pointer;
+
 }
 
 .active-link {
@@ -258,7 +265,6 @@ nav {
     transform: translate(-50%, -50%);
     width: 5px;
     height: 5px;
-    background: var(--first-color);
     border-radius: 50%;
 }
 
@@ -299,8 +305,9 @@ nav {
 .featured-name {
     font-size: 50px;
     font-weight: 600;
-    color: var(--text-color-second);
+    color: rgb(10, 10, 10);
     margin-block: 20px;
+
 }
 
 .typedText {
@@ -308,6 +315,7 @@ nav {
     color: var(--text-color-third);
     font-size: 28px;
     font-weight: 600;
+    color: rgb(0, 115, 255);
 }
 
 .featured-text-info {
@@ -433,7 +441,7 @@ nav {
 
 .top-header h1 {
     font-weight: 600;
-    color: var(--text-color-second);
+    color: black;
     margin-bottom: 10px;
 }
 
