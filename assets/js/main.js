@@ -1,13 +1,25 @@
-/* ----- NAVIGATION BAR FUNCTION ----- */
 function myMenuFunction() {
   var menuBtn = document.getElementById("myNavMenu");
 
-  if (menuBtn.classList.contains("responsive")) {
-    menuBtn.classList.remove("responsive");
+  if (menuBtn.className === "nav-menu") {
+    menuBtn.className += " responsive";
   } else {
-    menuBtn.classList.add("responsive");
+    menuBtn.className = "nav-menu";
   }
 }
+
+// Add an event listener to each menu item to remove the 'responsive' class
+const menuItems = document.querySelectorAll('.nav-menu a');
+
+menuItems.forEach(item => {
+  item.addEventListener('click', () => {
+    var menuBtn = document.getElementById("myNavMenu");
+    menuBtn.className = "nav-menu";
+  });
+});
+
+// Scroll active and other functions...
+
 
 // Add event listener to each menu item to close the menu when clicked
 const menuItems = document.querySelectorAll('.nav-menu a');
