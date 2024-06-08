@@ -42,6 +42,10 @@ function themeToggle() {
 
   }
 }
+/* resume download */
+function openPdf() {
+            window.open('path/to/your/file.pdf', '_blank');
+        }
 
 
 /* ----- TYPING EFFECT ----- */
