@@ -195,6 +195,28 @@ function toggleTheme() {
 
   }
 }
+document.addEventListener('DOMContentLoaded', function() {
+    // Select the mobile menu button and the mobile menu
+    const menuBtn = document.querySelector('.nav-menu-btn');
+    const mobileMenu = document.querySelector('.nav-menu');
+
+    // Select all menu items
+    const menuItems = document.querySelectorAll('.nav_menu_list .nav_list');
+
+    // Add event listener to each menu item
+    menuItems.forEach(menuItem => {
+        menuItem.addEventListener('click', () => {
+            // Hide the mobile menu when a menu item is clicked
+            mobileMenu.classList.remove('responsive');
+        });
+    });
+
+    // Add event listener to the mobile menu button
+    menuBtn.addEventListener('click', () => {
+        // Toggle the 'responsive' class on the mobile menu to show/hide it
+        mobileMenu.classList.toggle('responsive');
+    });
+});
 
 
 
