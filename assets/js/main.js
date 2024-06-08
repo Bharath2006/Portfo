@@ -1,3 +1,4 @@
+/* ----- NAVIGATION BAR FUNCTION ----- */
 function myMenuFunction() {
   var menuBtn = document.getElementById("myNavMenu");
 
@@ -7,29 +8,6 @@ function myMenuFunction() {
     menuBtn.className = "nav-menu";
   }
 }
-
-// Add an event listener to each menu item to remove the 'responsive' class
-const menuItems = document.querySelectorAll('.nav-menu a');
-
-menuItems.forEach(item => {
-  item.addEventListener('click', () => {
-    var menuBtn = document.getElementById("myNavMenu");
-    menuBtn.className = "nav-menu";
-  });
-});
-
-// Scroll active and other functions...
-
-
-// Add event listener to each menu item to close the menu when clicked
-const menuItems = document.querySelectorAll('.nav-menu a');
-menuItems.forEach(item => {
-  item.addEventListener('click', () => {
-    // Close the menu
-    const menuBtn = document.getElementById("myNavMenu");
-    menuBtn.classList.remove("responsive");
-  });
-});
 
 /* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
 window.onscroll = function () { headerShadow(), themeToggle() };
@@ -204,6 +182,7 @@ function toggleTheme() {
 
   }
 }
+
 
 
 window.addEventListener('scroll', scrollActive)
