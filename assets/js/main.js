@@ -182,7 +182,15 @@ function toggleTheme() {
 
   }
 }
-
+// Add event listener to each menu item to close the menu when clicked
+const menuItems = document.querySelectorAll('.nav-menu a');
+menuItems.forEach(item => {
+  item.addEventListener('click', () => {
+    // Close the menu
+    const menuBtn = document.getElementById("myNavMenu");
+    menuBtn.className = "nav-menu";
+  });
+});
 
 
 window.addEventListener('scroll', scrollActive)
