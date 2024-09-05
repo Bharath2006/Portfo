@@ -44,7 +44,7 @@ function themeToggle() {
 }
 /* resume download */
 function openPdf() {
-  window.open('assets/images/csda.apk', '_blank');
+  window.open('assets/Resume/BharathResume.pdf', '_blank');
 }
 
 
