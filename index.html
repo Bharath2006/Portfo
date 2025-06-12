@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharath S | Full Stack Developer</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Bharath <span class="text-gradient">S</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <button class="btn btn-primary ms-3 d-none d-lg-inline-block pulse-animation" onclick="openPdf()">
+                    Download CV <i class="fas fa-download ms-2"></i>
+                </button>
+                <button class="theme-toggle ms-3" onclick="toggleDarkMode()">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-1 order-2">
+                    <h5 class="text-primary mb-3 animate__animated animate__fadeInUp">Hello, I'm</h5>
+                    <h1 class="mb-3 animate__animated animate__fadeInUp animate__delay-1s">Bharath S</h1>
+                    <h3 class="mb-4 animate__animated animate__fadeInUp animate__delay-2s">I'm a <span class="typed-text"></span></h3>
+<p class="lead mb-4 animate__animated animate__fadeInUp animate__delay-3s">
+  I’m a passionate developer from Tirupur who loves transforming ideas into impactful digital solutions. With expertise in Microsoft Power Platform and Flutter, I build everything from smart chatbots to OCR tools for Tamil and English. I thrive in high-energy environments—especially hackathons—where I’ve proudly secured top prizes for solving real-world challenges with innovative tech. I'm always exploring new ways to merge creativity with code and build solutions that truly make a difference.
+</p>
+                    <div class="d-flex mb-4 animate__animated animate__fadeInUp animate__delay-4s">
+                        <a href="#contact" class="btn btn-primary me-3">Contact Me</a>
+                        <a href="#" class="btn btn-outline-primary" onclick="openPdf()">Download CV</a>
+                    </div>
+                    <div class="social-links animate__animated animate__fadeInUp animate__delay-5s">
+                        <a href="https://linkedin.com/in/bharath-s-b46a43315" target="_blank" class="social-icon linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Bharath2006/" target="_blank" class="social-icon github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://instagram.com/_.bharath__s?igsh=dXV2MzVqZ3VsbzZh" target="_blank" class="social-icon instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-2 order-1 text-center mb-5 mb-lg-0">
+                    <div class="hero-img-container floating">
+                        <img src="assets/images/bharath.jpeg" alt="Bharath S" class="img-fluid hero-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5" id="about">
+        <div class="container py-5">
+            <h2 class="text-center section-title">About Me</h2>
+            <div class="row mt-5">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="card h-100 border-0 shadow-sm card-hover-effect">
+                        <div class="card-body p-4">
+                            <h3 class="card-title mb-4">Introduction</h3>
+                            <p class="card-text">"Enthusiastic Flutter Full Stack Developer adept at crafting seamless user experiences across mobile and web platforms. With a solid foundation in both frontend and backend technologies, I specialize in leveraging Flutter's versatility to build dynamic, high-performance applications. My passion lies in delivering elegant solutions that merge design aesthetics with robust functionality, ensuring optimal performance and user satisfaction at every turn."</p>
+                            <button class="btn btn-primary mt-3" onclick="openPdf()">
+                                Download CV <i class="fas fa-download ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm card-hover-effect">
+                        <div class="card-body p-4">
+                            <h3 class="card-title mb-4">My Journey</h3>
+                            <div class="timeline">
+                                <div class="timeline-item mb-4">
+                                    <div class="timeline-badge bg-primary"></div>
+                                    <div class="timeline-content">
+                                        <h5 class="mb-1">Started Programming</h5>
+                                        <p class="text-muted mb-0">2018 - First steps into the world of coding</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item mb-4">
+                                    <div class="timeline-badge bg-primary"></div>
+                                    <div class="timeline-content">
+                                        <h5 class="mb-1">First Mobile App</h5>
+                                        <p class="text-muted mb-0">2020 - Developed my first Android application</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item mb-4">
+                                    <div class="timeline-badge bg-primary"></div>
+                                    <div class="timeline-content">
+                                        <h5 class="mb-1">FullStack Development</h5>
+                                        <p class="text-muted mb-0">2022 - Expanded into web development</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-badge bg-primary"></div>
+                                    <div class="timeline-content">
+                                        <h5 class="mb-1">Freelance Work</h5>
+                                        <p class="text-muted mb-0">2023 - Started taking client projects</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Skills Section -->
+<section class="py-5 bg-light" id="skills">
+  <div class="container py-5">
+    <h2 class="text-center section-title">My Skills</h2>
+
+    <div class="row mt-5">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 border-0 shadow-sm card-hover-effect">
+          <div class="card-body text-center p-4">
+            <div class="icon-container mb-4">
+              <i class="fab fa-microsoft text-primary" style="font-size: 3rem;"></i>
+            </div>
+            <h4 class="mb-3">Microsoft Power Platforms</h4>
+            <div class="skills">
+              <span class="skill-badge d-block mb-2">Power Apps</span>
+              <span class="skill-badge d-block mb-2">Power Automate</span>
+              <span class="skill-badge d-block mb-2">Power BI</span>
+              <span class="skill-badge d-block">SharePoint Online</span>
+               <span class="skill-badge d-block">Excel</span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 border-0 shadow-sm card-hover-effect">
+          <div class="card-body text-center p-4">
+            <div class="icon-container mb-4">
+              <i class="fas fa-laptop-code text-primary" style="font-size: 3rem;"></i>
+            </div>
+            <h4 class="mb-3">Frontend</h4>
+            <div class="skills">
+              <span class="skill-badge d-block mb-2">Flutter</span>
+                <span class="skill-badge d-block">React</span>
+              <span class="skill-badge d-block mb-2">HTML</span>
+              <span class="skill-badge d-block mb-2">CSS</span>
+              <span class="skill-badge d-block mb-2">JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 border-0 shadow-sm card-hover-effect">
+          <div class="card-body text-center p-4">
+            <div class="icon-container mb-4">
+              <i class="fas fa-server text-primary" style="font-size: 3rem;"></i>
+            </div>
+            <h4 class="mb-3">Backend</h4>
+            <div class="skills">
+              <span class="skill-badge d-block mb-2">Dart</span>
+              <span class="skill-badge d-block mb-2">PHP</span>
+              <span class="skill-badge d-block mb-2">JAVA</span>
+              <span class="skill-badge d-block mb-2">Python</span>
+              <span class="skill-badge d-block mb-2">C++</span>
+              <span class="skill-badge d-block">C</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 border-0 shadow-sm card-hover-effect">
+          <div class="card-body text-center p-4">
+            <div class="icon-container mb-4">
+              <i class="fas fa-database text-primary" style="font-size: 3rem;"></i>
+            </div>
+            <h4 class="mb-3">Databases</h4>
+            <div class="skills">
+                <span class="skill-badge d-block mb-2">Firebase</span>
+              <span class="skill-badge d-block mb-2">MySQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 border-0 shadow-sm card-hover-effect">
+          <div class="card-body text-center p-4">
+            <div class="icon-container mb-4">
+              <i class="fas fa-tools text-primary" style="font-size: 3rem;"></i>
+            </div>
+            <h4 class="mb-3">Tools</h4>
+            <div class="skills">
+                <span class="skill-badge d-block mb-2">GitHub</span>
+              <span class="skill-badge d-block mb-2">Git</span>
+              <span class="skill-badge d-block mb-2">VSCode</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Achievements Section-->  
+<section class="py-5" id="achievements"> 
+  <div class="container py-5">
+    <h2 class="text-center mb-2">My Achievements</h2>  
+    <p class="text-center mb-5 text-muted">Milestones and recognitions in my development journey</p>  
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <div class="col">
+        <div class="card h-100 border-0 rounded-3 shadow-sm overflow-hidden position-relative"
+             style="transition: transform .4s ease, box-shadow .4s ease;"
+             onmouseover="this.style.transform='translateY(-8px)'; this.classList.replace('shadow-sm','shadow-lg')"
+             onmouseout="this.style.transform=''; this.classList.replace('shadow-lg','shadow-sm')">
+          <div class="card-body text-center p-4">
+            <i class="fas fa-medal fs-1 text-primary mb-4"></i>
+            <h4 class="mb-3">1st Place – Fixit@KPRCAS</h4>
+            <p class="text-muted">Won Intra-Collegiate 24-Hour Hackathon as Team Lead for “Publication Chatbot” (Mar 2025)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 border-0 rounded-3 shadow-sm overflow-hidden position-relative"
+             style="transition: transform .4s ease, box-shadow .4s ease;"
+             onmouseover="this.style.transform='translateY(-8px)'; this.classList.replace('shadow-sm','shadow-lg')"
+             onmouseout="this.style.transform=''; this.classList.replace('shadow-lg','shadow-sm')">
+          <div class="card-body text-center p-4">
+            <i class="fas fa-users fs-1 text-primary mb-4"></i>
+            <h4 class="mb-3">Tamizhi Hackathon</h4>
+            <p class="text-muted">Team Lead at StartupTN & Thiral Hackathon — Ranked 13<sup>th</sup> out of 147+ teams (May 2025)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 border-0 rounded-3 shadow-sm overflow-hidden position-relative"
+             style="transition: transform .4s ease, box-shadow .4s ease;"
+             onmouseover="this.style.transform='translateY(-8px)'; this.classList.replace('shadow-sm','shadow-lg')"
+             onmouseout="this.style.transform=''; this.classList.replace('shadow-lg','shadow-sm')">
+          <div class="card-body text-center p-4">
+            <i class="fas fa-robot fs-1 text-primary mb-4"></i>
+            <h4 class="mb-3">Asia Book of Records</h4>
+            <p class="text-muted">Participated in “70 Robots Cleaning 1,000 sq.ft for 25 Minutes” event (Dec 2024)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 border-0 rounded-3 shadow-sm overflow-hidden position-relative"
+             style="transition: transform .4s ease, box-shadow .4s ease;"
+             onmouseover="this.style.transform='translateY(-8px)'; this.classList.replace('shadow-sm','shadow-lg')"
+             onmouseout="this.style.transform=''; this.classList.replace('shadow-lg','shadow-sm')">
+          <div class="card-body text-center p-4">
+            <i class="fas fa-lightbulb fs-1 text-primary mb-4"></i>
+            <h4 class="mb-3">Project Expo – NEXUS 23</h4>
+            <p class="text-muted">Presented innovations, received feedback from industry experts and peers (2023)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 border-0 rounded-3 shadow-sm overflow-hidden position-relative"
+             style="transition: transform .4s ease, box-shadow .4s ease;"
+             onmouseover="this.style.transform='translateY(-8px)'; this.classList.replace('shadow-sm','shadow-lg')"
+             onmouseout="this.style.transform=''; this.classList.replace('shadow-lg','shadow-sm')">
+          <div class="card-body text-center p-4">
+            <i class="fas fa-lightbulb fs-1 text-primary mb-4"></i>
+            <h4 class="mb-3">Project Expo – NEXUS 24</h4>
+            <p class="text-muted">Showcased updated innovations, engaged with new feedback and audiences (2024)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Projects Section -->
+<section class="py-5" id="projects">
+  <div class="container py-5">
+    <h2 class="text-center mb-3 section-title">My Projects</h2>
+    <p class="text-center mb-5 text-muted">Here are some of my recent projects. Click on any project to view it on GitHub.</p>
+
+    <div class="row g-4">
+      <!-- Project 1 -->
+      <div class="col-md-6 col-lg-3" data-aos="fade-up">
+        <a href="https://github.com/Bharath2006/Test_face_and_hand_detection" target="_blank" class="text-decoration-none">
+          <div class="card project-card position-relative overflow-hidden shadow-sm rounded">
+            <img src="assets/images/HanFac.png" class="card-img-top project-img" alt="Hand and Face Landmarker">
+            <!-- Overlay -->
+            <div class="overlay d-flex flex-column justify-content-center align-items-center text-center p-3 position-absolute top-0 start-0 w-100 h-100">
+              <h5 class="text-white">Hand and Face Landmarker</h5>
+              <p class="small text-white mb-3">Advanced detection system using ML to track hand and face landmarks in real-time with high accuracy.</p>
+              <div>
+                <span class="badge bg-primary me-2">Flutter</span>
+                <span class="badge bg-secondary">ML</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-6 col-lg-3" data-aos="fade-up">
+        <a href="https://github.com/Bharath2006/FingBright" target="_blank" class="text-decoration-none">
+          <div class="card project-card position-relative overflow-hidden shadow-sm rounded">
+            <img src="assets/images/fingbri.png" class="card-img-top project-img" alt="2 Finger Brighter">
+            <div class="overlay d-flex flex-column justify-content-center align-items-center text-center p-3 position-absolute top-0 start-0 w-100 h-100">
+              <h5 class="text-white">2 Finger Brighter</h5>
+              <p class="small text-white mb-3">Screen brightness control gesture app</p>
+              <div>
+                <span class="badge bg-primary me-2">Android</span>
+                <span class="badge bg-secondary">Kotlin</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-6 col-lg-3" data-aos="fade-up">
+        <a href="https://github.com/Bharath2006/FaSaAnalist" target="_blank" class="text-decoration-none">
+          <div class="card project-card position-relative overflow-hidden shadow-sm rounded">
+            <img src="assets/images/FaEmoDetec.png" class="card-img-top project-img" alt="Face Emotion Detector">
+            <div class="overlay d-flex flex-column justify-content-center align-items-center text-center p-3 position-absolute top-0 start-0 w-100 h-100">
+              <h5 class="text-white">Face Emotion Detector</h5>
+              <p class="small text-white mb-3">Real-time emotion recognition system</p>
+              <div>
+                <span class="badge bg-primary me-2">Python</span>
+                <span class="badge bg-secondary">OpenCV</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="col-md-6 col-lg-3" data-aos="fade-up">
+        <a href="https://github.com/Bharath2006/EyFaDetec" target="_blank" class="text-decoration-none">
+          <div class="card project-card position-relative overflow-hidden shadow-sm rounded">
+            <img src="assets/images/EyeFacLandmarker.png" class="card-img-top project-img" alt="Eye and Hand LandMarker">
+            <div class="overlay d-flex flex-column justify-content-center align-items-center text-center p-3 position-absolute top-0 start-0 w-100 h-100">
+              <h5 class="text-white">Eye and Hand LandMarker</h5>
+              <p class="small text-white mb-3">Precision tracking application</p>
+              <div>
+                <span class="badge bg-primary me-2">Flutter</span>
+                <span class="badge bg-secondary">Dart</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Hidden Projects (collapse container) -->
+    <div class="collapse" id="moreProjects">
+      <div class="row g-4 mt-4">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up">
+          <a href="https://github.com/Bharath2006/Drowse" target="_blank" class="text-decoration-none">
+            <div class="card project-card position-relative overflow-hidden shadow-sm rounded">
+              <img src="assets/images/DroDect.png" class="card-img-top project-img" alt="Drowsiness Detector">
+              <div class="overlay d-flex flex-column justify-content-center align-items-center text-center p-3 position-absolute top-0 start-0 w-100 h-100">
+                <h5 class="text-white">Drowsiness Detector</h5>
+                <p class="small text-white mb-3">Driver safety application</p>
+                <div>
+                  <span class="badge bg-primary me-2">Python</span>
+                  <span class="badge bg-secondary">AI</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Add more hidden projects here if needed -->
+      </div>
+    </div>
+
+    <!-- Show More Button -->
+    <div class="text-center mt-4">
+      <button class="btn btn-outline-primary px-4"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#moreProjects"
+              aria-expanded="false"
+              aria-controls="moreProjects"
+              id="showMoreBtn">
+        Show More
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Certifications Section -->
+<section id="certifications" class="py-5 bg-light">
+    <div class="container py-5">
+        <h2 class="text-center section-title">My Certifications</h2>
+        <p class="text-center text-muted mb-5">Professional credentials validating my skills and knowledge</p>
+        
+        <div class="row g-4">
+            <!-- Certification 1 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm certification-card">
+                    <div class="card-header bg-white border-0 pb-0">
+                        <img src="assets/images/certificates/powerplatform101.jpeg" class="card-img-top" alt="Flutter Certification">
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="card-title mb-0">Power Platform 101</h5>
+                            <span class="badge bg-primary rounded-pill">Apr 2025</span>
+                        </div>
+                        <p class="text-muted small mb-3">PowerApps911</p>
+                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                            <a href="https://training.powerapps911.com/certificates/olcdxlet5s" class="btn btn-sm btn-outline-primary">View Credential</a>
+                            <i class="fas fa-award text-warning"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Certification 2 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm certification-card">
+                    <div class="card-header bg-white border-0 pb-0">
+                        <img src="assets/images/certificates/react.png" class="card-img-top" alt="AWS Certification">
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="card-title mb-0">Frontend Developer (React)</h5>
+                            <span class="badge bg-primary rounded-pill">Mar 2025</span>
+                        </div>
+                        <p class="text-muted small mb-3">Hacker Rank</p>
+                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                            <a href="https://www.hackerrank.com/certificates/3b2fafe5a365" class="btn btn-sm btn-outline-primary">View Credential</a>
+                            <i class="fas fa-award text-warning"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Certification 3 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm certification-card">
+                    <div class="card-header bg-white border-0 pb-0">
+                        <img src="assets/images/certificates/sql intermediate.png" class="card-img-top" alt="Python Certification">
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="card-title mb-0">SQL (Intermediate)</h5>
+                            <span class="badge bg-primary rounded-pill">Mar 2025</span>
+                        </div>
+                        <p class="text-muted small mb-3">Hacker Rank</p>
+                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                            <a href="#" class="btn btn-sm btn-outline-primary">View Credential</a>
+                            <i class="fas fa-award text-warning"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Certification 4 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm certification-card">
+                    <div class="card-header bg-white border-0 pb-0">
+                        <img src="assets/images/certificates/Introduducing to cloud.png" class="card-img-top" alt="React Certification">
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="card-title mb-0">Introduction to Cloud</h5>
+                            <span class="badge bg-primary rounded-pill">2022</span>
+                        </div>
+                        <p class="text-muted small mb-3">Meta (Facebook)</p>
+                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                            <a href="https://courses.cognitiveclass.ai/certificates/d718a70015ba4c2aa70326efeb2c98b0" class="btn btn-sm btn-outline-primary">View Credential</a>
+                            <i class="fas fa-award text-warning"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<!-- Languages Section -->
+<section class="py-5 bg-light" id="languages">
+  <div class="container py-5">
+    <h2 class="text-center mb-4 fw-bold">Languages</h2>
+    <p class="text-center text-muted mb-5">Languages I can speak, read, and write proficiently</p>
+
+    <div class="row g-4 justify-content-center">
+      <!-- Language Card 1 -->
+      <div class="col-md-5">
+        <div class="card shadow-sm border-0 rounded-4 p-3">
+          <div class="d-flex align-items-center mb-3">
+            <div class="bg-primary text-white rounded-circle d-flex justify-content-center align-items-center me-3" style="width: 48px; height: 48px;">
+              <i class="bi bi-translate fs-4"></i>
+            </div>
+            <div>
+              <h5 class="mb-0 fw-semibold">English</h5>
+              <small class="text-muted">Professional</small>
+            </div>
+          </div>
+          <div class="progress rounded-pill" style="height: 12px;">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Language Card 2 -->
+      <div class="col-md-5">
+        <div class="card shadow-sm border-0 rounded-4 p-3">
+          <div class="d-flex align-items-center mb-3">
+            <div class="bg-success text-white rounded-circle d-flex justify-content-center align-items-center me-3" style="width: 48px; height: 48px;">
+              <i class="bi bi-translate fs-4"></i>
+            </div>
+            <div>
+              <h5 class="mb-0 fw-semibold">Tamil</h5>
+              <small class="text-muted">Native</small>
+            </div>
+          </div>
+          <div class="progress rounded-pill" style="height: 12px;">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Optional Language 3 Example -->
+      <!--
+      <div class="col-md-5">
+        <div class="card shadow-sm border-0 rounded-4 p-3">
+          <div class="d-flex align-items-center mb-3">
+            <div class="bg-warning text-white rounded-circle d-flex justify-content-center align-items-center me-3" style="width: 48px; height: 48px;">
+              <i class="bi bi-translate fs-4"></i>
+            </div>
+            <div>
+              <h5 class="mb-0 fw-semibold">Hindi</h5>
+              <small class="text-muted">Intermediate</small>
+            </div>
+          </div>
+          <div class="progress rounded-pill" style="height: 12px;">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+      -->
+
+    </div>
+  </div>
+</section>
+
+    <!-- Contact Section -->
+    <section class="py-5 bg-light" id="contact">
+        <div class="container py-5">
+            <h2 class="text-center section-title">Get In Touch</h2>
+            <p class="text-center mb-5">Do you have a project in your mind? Contact me here</p>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-info text-center">
+                        <h3 class="mb-4">Let's Work Together!</h3>
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 mb-4">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-envelope contact-icon"></i>
+                                    <div>
+                                        <h5 class="mb-0">Email</h5>
+                                        <a href="mailto:skbharath2006@gmail.com" class="text-white">skbharath2006@gmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-phone contact-icon"></i>
+                                    <div>
+                                        <h5 class="mb-0">Phone</h5>
+                                        <a href="tel:+919080121722" class="text-white">+91 9080121722</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links mt-4">
+                            <a href="https://linkedin.com/in/bharath-s-b46a43315" target="_blank" class="social-icon linkedin mx-2">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/Bharath2006/" target="_blank" class="social-icon github mx-2">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://instagram.com/_.bharath__s?igsh=dXV2MzVqZ3VsbzZh" target="_blank" class="social-icon instagram mx-2">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <h3>Bharath S</h3>
+                    <p class="mb-4">Full Stack Developer | Mobile App Developer | DevOps Engineer</p>
+                </div>
+                <div class="col-12 text-center mb-4">
+                    <ul class="list-inline">
+                        <li class="list-inline-item mx-3">
+                            <a href="#home" class="footer-link">Home</a>
+                        </li>
+                        <li class="list-inline-item mx-3">
+                            <a href="#about" class="footer-link">About</a>
+                        </li>
+                        <li class="list-inline-item mx-3">
+                            <a href="#skills" class="footer-link">Skills</a>
+                        </li>
+                        <li class="list-inline-item mx-3">
+                            <a href="#projects" class="footer-link">Projects</a>
+                        </li>
+                        <li class="list-inline-item mx-3">
+                            <a href="#contact" class="footer-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 text-center">
+                    <p class="mb-0">Copyright &copy; <span id="year"></span> <a href="#home" class="footer-link">Bharath S</a> - All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="btn btn-primary btn-lg back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+
+    <script src="assets/js/main.js"></script>
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "n78y2iezv9");
+</script>
+
+
+</body>
+</html>
